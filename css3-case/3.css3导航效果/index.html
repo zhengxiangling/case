@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css nav test</title>
+	<link rel="stylesheet" type="text/css" href="css/css1.css">
+	<link rel="stylesheet" type="text/css" href="css/css2.css" />
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		a{
+			text-decoration: none;
+		}
+		.container>section{
+			margin: 20px auto;
+			padding: 2em 3em;
+			text-align: center;
+		}
+		h1{text-align: center;}
+		nav a {
+				position: relative;
+				display: inline-block;
+				margin: 15px 25px;
+				outline: none;/* 	轮廓线
+								注释：轮廓线不会占据空间，也不一定是矩形。
+								默认值： none  */
+				color: #fff;
+				text-decoration: none;
+				text-transform: Capitalize ;
+				/* Capitalize 英文拼音的首字母大写
+					Uppercase 英文拼音字母全大写
+					Lowercase 英文拼音字母全小写 */
+				letter-spacing: 1px; /* 字体间距1px */
+				text-shadow: 1px 1px 2px rgba(255,255,255,0.3); /* 字体阴影 */
+				font-size: 1.35em;
+			}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>link effect by css3</h1>
+		<section class="effect-1">
+			<h2>effect-1</h2>
+			<nav class="nav-effect-1">
+				<a href="">html5</a>
+				<a href="">css3</a>
+				<a href="">javascript</a>
+				<a href="">bootstrap</a>
+			</nav>
+		</section>
+		<section class="effect-2">
+			<h2>effect-2</h2>
+			<nav class="nav-effect-2">
+				<a href="#"><span data-hover="Html5">Html5</span></a>
+				<a href="#"><span data-hover="Css3">Css3</span></a>
+				<a href="#"><span data-hover="Javascript">Javascript</span></a>
+				<a href="#"><span data-hover="Bootstrap">Bootstrap</span></a>
+			</nav>
+		</section>
+	</div>
+</body>
+</html>

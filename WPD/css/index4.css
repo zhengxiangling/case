@@ -1,0 +1,492 @@
+@charset "UTF-8";
+
+body {
+    margin-top: 50px;
+    font-family: "Microsoft YaHei";
+    background-color: #f1f1f1;
+}
+
+
+/* lead字体效果 */
+
+@media screen and (max-width: 500px) {
+    .lead {
+        margin: 15px 0;
+        padding: 0;
+    }
+}
+
+.lead small {
+    font-size: 0.5em;
+    color: #ccc;
+}
+
+
+/* lead字体效果 end*/
+
+
+/* 绿色下划线效果 */
+
+.line-effect {
+    position: relative;
+}
+
+.line-effect:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #85af6f;
+}
+
+
+/* 绿色下划线效果end */
+
+
+/* 导航条 */
+
+.nav-main {
+    background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-main {
+        height: 50px;
+    }
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.nav-content {
+    margin-left: 150px;
+}
+
+.nav-content > ul > li {
+    margin: 0 1em;
+}
+.nav-content > ul > li:nth-child(4){
+    background-color: #9fca41;
+}
+.nav-content > ul > li:nth-child(4) > a{
+    color: #fff;
+}
+@media screen and (min-width: 1200px) {
+    .nav-main {
+        height: 60px;
+    }
+    .navbar-brand img {
+        height: 60px;
+    }
+    .nav-content > ul > li {
+        margin: 0 1em;
+        padding: 5px 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-content > ul > li {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-content > ul > li {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-content > ul > li {
+        width: 100px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-content > ul > li {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.nav-content > ul > li > a {
+    letter-spacing: 1px;
+    font-family: "Microsoft YaHei";
+    color: #000;
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-content > ul > li > a {
+        font-size: 20px;
+    }
+}
+
+.nav-content > ul >li:hover,
+.nav-content > ul >li:focus {
+    background-color: #9fca41;
+}
+
+.nav-content > ul >li > a:hover,
+.nav-content > ul >li > a:focus {
+    background-color: #9fca41;
+    color: #fff;
+}
+
+
+/* 导航条 end*/
+
+
+/* 导航条效果 */
+
+.nav-effect {
+    position: relative;
+}
+
+.nav-effect:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #85af6f;
+    transition: all .3s;
+}
+
+.nav-effect:hover:before {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.navbar-toggle {
+    background-color: #9FCA41;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+
+/* 分割线效果 */
+
+.hr-line {
+    border-bottom: 2px dotted #ccc;
+    border: 4px dotted #ccc;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+
+/* 分割线效果 end*/
+
+/* 二级菜单 */
+
+.second-nav > ul {
+    padding: 0;
+    height: 90px;
+    background-color: #9fca41;
+    box-shadow: 0 1px 1px #fff;
+}
+
+.border-top {
+    border-top: 1px solid #fff;
+}
+
+@media screen and (max-width: 1200px) {
+    .second-nav > ul {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .second-nav > ul {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .second-nav > ul {
+        width: 100px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .second-nav > ul {
+        width: 100%;
+        margin: 0;
+    }
+    .border-top {
+        border-top: 0px solid #ccc;
+    }
+}
+
+.second-a {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    color: #444;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1200px) {
+    .second-a {
+        font-size: 16px;
+    }
+}
+
+.second-a:hover,
+.second-a:focus {
+    text-decoration: none;
+}
+.second-nav > ul{
+    list-style: none;
+}
+.second-nav > ul > li > a:hover,
+.second-nav > ul > li > a:focus {
+    color: #fff;
+}
+
+
+/* 二级菜单 end*/
+
+/* banner */
+
+.article {
+    padding: 0;
+    margin: 0;
+}
+
+.banner {
+    padding: 0;
+    margin: 0;
+}
+
+.banner > div > img {
+    min-height: 150px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container .jumbotron,
+    .container-fluid .jumbotron,
+    .jumbotron {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container .jumbotron,
+    .container-fluid .jumbotron,
+    .jumbotron {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+/* banner end */
+
+
+/* 环境压力*/
+
+.en-pressure-fa {
+    background-color: #ebebeb;
+}
+
+@media screen and (min-width: 768px) {
+    .en-pressure-fa {
+        padding-top: 40px;
+        padding-bottom: 140px;
+    }
+}
+
+.en-pressure p.p2 {
+    margin-top: 4.5em;
+}
+
+.en-pressure-a > ul {
+    list-style: none;
+    border-left: 2px dashed #9fca41;
+}
+
+.en-pressure-a > ul > li > a {
+    line-height: 3.5em;
+    color: #9fca41;
+}
+
+@media screen and (min-width: 1200px) {
+    .en-pressure p.p2 {
+        margin-right: 12em;
+    }
+    .en-pressure-a > ul > li > a {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .en-pressure-a > ul > li > a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .en-pressure-a > ul > li > a {
+        font-size: 14px;
+    }
+}
+
+
+/*环境压力 end*/
+
+
+/*全球环境问题*/
+
+.global-en {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .global-en-header {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+.p3 {
+    margin: 0;
+}
+
+.global-en-header > .row .pro-bar {
+    height: 10px;
+    margin-top: 5px;
+}
+
+.global-en-content {
+    margin: 0;
+    padding: 0;
+}
+
+.pogoSlider-slide {
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.pogoSlider-slide > .col-xs-4 {
+    height: inherit;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.pogoSlider-slide > div > p {
+    font-size: 2em;
+}
+
+@media screen and (max-width: 1336px) {
+    .pogoSlider-slide > div > p {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .pogoSlider-slide > div > h2 {
+        font-size: 2em;
+    }
+    .pogoSlider-slide > div > p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pogoSlider-slide > div > h2 {
+        font-size: 1.5em;
+    }
+    .pogoSlider-slide > div > p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .pogoSlider-slide > div > h2 {
+        font-size: 1em;
+    }
+}
+
+.pogoSlider-slide-h2-1 {
+    color: #5294ce;
+}
+
+.pogoSlider-slide-h2-2 {
+    color: #b3543a;
+}
+
+
+/*全球环境问题 end*/
+
+
+/*环保网站*/
+
+.en-protection {
+    padding-top: 1em;
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .en-pro-header {
+        margin-bottom: 10px;
+    }
+}
+
+.en-pro-header > .row .pro-bar {
+    height: 10px;
+    margin-top: 5px;
+}
+
+.en-pro-content div.col-md-4 > img {
+    height: 120px;
+}
+
+.en-pro-content div.col-md-5 > img {
+    height: 120px;
+}
+
+.en-pro-content > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.en-pro-content > div.row > div img {
+    max-width: 70%;
+}
+
+/*环保网站 end*/
+
+
+/* 版权 */
+
+footer {
+    background-color: #3e3e3e;
+}
+
+footer p {
+    padding: 0;
+    color: #fff;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+}

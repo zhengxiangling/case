@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生命摇篮</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/hover-min.css">
+    <link rel="stylesheet" href="../css/jquery.parallux.min.css">
+    <link rel="stylesheet" href="../css/index6.css">
+    <!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar navbar-fixed-top nav-main">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="../images/logo.png" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse nav-content" id="navbar-collapse-1">
+                <ul class="nav navbar-nav  nav-effect-1">
+                    <li class="active text-center nav-effect hvr-sink">
+                        <a href="../index.html">首页</a>
+                    </li>
+                    <li class="second-nav text-center nav-effect hvr-sink">
+                        <a href="beautiful-gx.html">美丽广西</a>
+                    </li>
+                    <li class="text-center nav-effect hvr-sink">
+                        <a href="life-cradle.html">生命摇篮</a>
+                    </li>
+                    <li class="text-center nav-effect hvr-sink">
+                        <a href="current-en.html">环境现状</a>
+                    </li>
+                    <li class="text-center nav-effect hvr-sink">
+                        <a href="strategy-ma.html">治理攻略</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="htmleaf-container">
+        <!-- Parallax item -->
+        <div class="parallux">
+            <!-- Background layer -->
+            <div class="parallux-bg fixed">
+                <!-- Div for using translate3d -->
+                <div class="parallux-inner" id="bg-1">
+                    <!-- Here you can insert any HTML-->
+                </div>
+            </div>
+            <!-- Parallax foreground with the same size and transparent -->
+            <div class="text">
+                <h2>或许，</h2>
+                <p>每个人都渴望在自己的花甲之年住上一个小农场，有马有狗，养鹰种茶花，读书种地，酿酒喝普洱茶。</p>
+            </div>
+        </div>
+        <!-- Parallax Item -->
+        <div class="parallux">
+            <!-- Background layer -->
+            <div class="parallux-bg fixed">
+                <!-- Div for using translate3d -->
+                <div class="parallux-inner" id="bg-2">
+                    <!-- Everything inside parallux-inner will do parallax as well -->
+                    <div class="text">
+                        <h2>人亦如落叶归根般，</h2>
+                        <p>渴望回到生命最初的地方。每个人都在寻找自己生命的来源，我想，我们每个人的生命都始于大自然，而最后又归回大自然。故而，当年轻已习惯穿梭在灯红酒绿高楼大厦中后，年迈时渴望回归大自然。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Parallax foreground with the same size and transparent -->
+        </div>
+        <!-- Parallax Item -->
+        <div class="parallux">
+            <!-- Background layer -->
+            <div class="parallux-bg fixed">
+                <!-- Div for using translate3d -->
+                <div class="parallux-inner" id="bg-3">
+                    <!-- Here you can insert any HTML -->
+                </div>
+            </div>
+            <!-- Parallax foreground with the same size and transparent -->
+            <div class="text">
+                <h2>万物有灵，</h2>
+                <p>万物生长。每一个清晨，我们都应当用心去感受彻夜未眠的虫鸣，捧着雨露的玉米杆，欣赏波光映云、流岚沾草。</p>
+            </div>
+        </div>
+        <div class="parallux">
+            <!-- Background layer -->
+            <div class="parallux-bg fixed">
+                <!-- Div for using translate3d -->
+                <div class="parallux-inner" id="bg-4">
+                    <!-- Here you can insert any HTML -->
+                </div>
+            </div>
+            <!-- Parallax foreground with the same size and transparent -->
+            <div class="text">
+                <h2>习近平：“绿水青山就是金山银山”</h2>
+                <p>今天他提出“绿色发展”新理念，他说“让居民望得见山、看得见水、记得住乡愁”</p>
+                <p>感谢生命摇篮——大自然每一天的陪伴与奉献。</p>
+            </div>
+        </div>
+    </div>
+    <!-- 版权 -->
+    <footer id="footer">
+        <p class="text-center">设计：赵永哲，李彦瞳&nbsp;&nbsp;文案：莫甜甜</p>
+        <p class="text-center">&nbsp;技术支持：郑相翎，蓝裕林 &nbsp;</p>
+        <p class="text-center">&copy;网页设计大赛小分队 版权所有</p>
+    </footer>
+  	<script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.parallux.min.js"></script>
+    <script src="../js/custom.modernizr.min.js"></script>
+    <script>
+    $(function() {
+        $(".parallux").parallux({
+            onMobile: 'fixed',
+            fullHeight: true,
+        });
+        var $winswidth = $(window).width();
+        if ($winswidth < 768) {
+            $(".nav-effect-1 li").removeClass("hvr-sink");
+        }
+        if ($winswidth > 500) {
+            $(".village-a > ul > li > p").css({
+                "float": "right"
+            });
+        }
+    });
+    </script>
+</body>
+
+</html>

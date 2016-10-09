@@ -1,0 +1,361 @@
+body{
+	padding: 0;
+	margin: 0
+}
+.clearfix:after{
+	content: ' ';
+	display: block;
+	clear: both;
+}
+.nav{
+	background: #968774;
+	height: 60px;
+	width: 100%;
+	z-index: 1000;
+}
+.atexthover{
+	text-decoration: none;
+	display: inline-block;
+	margin-top: -30px;
+	color: #fff;
+}
+.atexthover:hover{
+	color: #6D0565;
+}
+/* ul,li{
+	margin: 0px;
+	padding: 0;
+} */
+nav >.logo >a >img{
+	width: 50px;
+	height: 50px;
+	margin-top: -5px;
+}
+ul {
+	margin: 0;
+	padding: 0px;
+}
+nav{
+	position: fixed;
+}
+nav ul li a{
+	font-family: "微软雅黑";
+	padding: 3px;
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	margin: 0 10px;
+	font-size: 20px;
+}
+nav ul li a:before {
+	content: '[';
+	 opacity: 0; 
+}
+
+nav ul li a:after {
+	content: ']';
+	 opacity: 0; 
+}
+nav ul li a:hover:before,
+nav ul li a:focus:before{
+	opacity: 1;
+	-webkit-transform: translateX(-10px);
+	-moz-transform: translateX(-10px);
+	transform: translateX(-10px);
+}
+nav ul li a:hover:after,
+nav ul li a:focus:after{
+	opacity: 1;
+	-webkit-transform: translateX(10px);
+	-moz-transform: translateX(10px);
+	transform: translateX(10px);
+}
+nav ul li a:before,
+nav ul li a:after {
+	display: inline-block;/* 应用此特性的元素呈现为内联对象，周围元素保持在同一行，但可以设置宽度和高度地块元素的属性 */
+	-webkit-transition: -webkit-transform 0.3s ease-in, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s ease-in, opacity 0.2s;
+	transition: transform 0.3s ease-in, opacity 0.2s;
+}
+header{
+	background: rgba(0,0,0,0.4);
+}
+#banner{
+	background: transparent;
+	height: 700px;
+	font-family: "微软雅黑";
+}
+ nav ul{
+	list-style: none;
+	margin-right: 20px;
+	float: right;
+} 
+nav.logo{
+	display: inline-block;
+	line-height: 50px;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	margin: 0px;
+	padding: 0;
+	line-height: 50px;
+}
+.logo{
+	float: left;
+	padding: 10px;
+}
+.logo a{
+	text-decoration: none;
+}
+.logo .name{
+	display: inline-block;
+}
+#banner .inner{
+	max-width: 300px;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	top: 120px;
+	color: #fff;
+}
+#banner .inner h1{
+	margin: 0;
+}
+/* button{
+	border: none;
+	background: #333;
+	color: #eee;
+	padding: 14px 40px;
+	border-radius: 10px;
+} */
+#banner .inner .more{
+	margin-top: 200px;
+}
+.sub-header{
+	line-height: 30px;
+	margin: 30px;
+}
+.logo{
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.hr{
+	width: 100%;
+	height: 2px;
+	margin: 20px auto;
+}
+.logo a{
+	color: #fff;
+}
+.green-section{
+	text-align: center;
+	background-color: #4E9B6F;
+	color: #fff;
+	padding: 100px 0;
+}
+.green-section .hr{
+	background: #24524E;
+	width: 60%;
+}
+.wrapper{
+	max-width: 1080px;
+	margin: 0 auto;
+}
+.sub-heading{
+
+}
+.green-section .icon-group .icon{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background: #10504A;
+	border: 1px solid #24524E;
+	border-radius: 5px;
+	transform: rotate(45deg);
+	margin: 20px;
+}
+
+.icon-group{
+	margin-top: 60px;
+}
+.gray-section{
+	background-color: #1F403D;
+	color: #fff;
+	font-size: 0;/* 把两个article的上下缝隙清除 */
+}
+.gray-section .img-section{
+	width: 45%;
+}
+.img-section img{
+	width: 100%;
+}
+.article-preview .text-section{
+	width: 55%;
+	float: left;
+	position: relative;
+	top: 58px;
+	left: 60px;
+}
+.article-preview .text-section .sub-heading{
+	max-width: 200px;
+	float: left;
+}
+.article-preview .text-section p{
+	float: left;
+
+	margin: 5px 30px;
+	padding: 0;
+}
+/*选择偶数*/
+.article-preview:nth-child(odd){
+	background-color: rgba(255,255,255,0.1);/* 白色的滤镜 */
+}
+.text-section >*{
+	max-width: 80%;
+}
+
+.article-preview .img-section{
+	float: left;
+}
+
+.article-preview:after{
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+.text-section p{
+	font-size: 18px;
+	letter-spacing: 1px;	
+}
+.text-section .sub-heading{
+	font-size: 22px;
+}
+.homework-small-group,.homework-small{
+	display: inline-block;
+	height: 30px;
+	width: 100%;
+/* 	background: #accaaa; */
+}
+.homework-small-group{
+/* 	background-color: rgba(0,0,0,0.05);	 */
+	padding: 5px;
+	display: block;
+	height: 100%;
+}
+.homework-small a{
+	display: inline-block;
+	line-height: inherit;
+/* 	background-color: rgba(0,0,0,0.03); */
+	height: 30px;
+	color: #fff;
+	margin-left: -10px;
+	margin-right: -20px;
+}
+.homework-small a:hover{
+	background-color: #497A94;
+}
+.homework-small a>p{
+	font-size: 13px;
+	font-family: "微软雅黑";
+}
+.purple-section{
+	background: #9C6898;
+	color: #fff;
+	padding: 80px 0;
+}
+.purple-section .heading-wrapper{
+	max-width: 85%;
+	margin: 0 auto;
+	text-align: center;
+}
+.purple-section .heading-wrapper .hr{
+	background-color: #C281C3;
+	width: 60%;
+}
+.card-group{
+	margin-top: 30px;
+}
+.card{
+	float: left;
+	width: 50%;
+	line-height: 20px;
+	min-height: 300px;
+	padding: 50px;
+	box-sizing: border-box;
+}
+.card:first-child{
+	background-color: rgba(0,0,0,0.04);
+}
+.card:nth-child(2){
+	background-color: rgba(0,0,0,0.08);
+}
+.card:nth-child(3){
+	background-color: rgba(0,0,0,0.12);
+}
+.card:nth-child(4){
+	background-color: rgba(0,0,0,0.16);
+}
+.card:nth-child(5){
+	background-color: rgba(0,0,0,0.20);
+}
+.card:nth-child(6){
+	background-color: rgba(0,0,0,0.24);
+}
+footer{
+	background: #333;
+	color: #fff;
+	min-height: 200px;
+	text-align: center;
+}
+ul.share-group{
+	width: 85%;
+	margin: 0 auto;
+	display: block;
+	padding: 50px;
+}
+.share-group li{
+	display: inline-block;
+	padding: 10px;
+}
+.copy{
+	padding-bottom: 20px;
+}
+.mian-wrapper{
+	background: #444 url(../img/banner.jpg);
+	background-attachment: fixed;/* 让图片不动 */
+	background-repeat: no-repeat;
+	background-size: cover;/* 让图片像封面一样伸展开来 */
+	background-position: center center;
+	overflow: hidden;
+	position: relative;
+	min-width: 460px;
+}
+.top_btn{
+	width: 3em;
+	height: 3em;
+	position: fixed;
+	right: 2%;
+	bottom: 4%;
+	opacity: 0.8;
+	background-color: #eeeccc;
+	border-radius: 5px;
+}
+.top{
+	padding: 1em 0.5em;
+	width: 1em;
+	height: 1em;
+	font-family: "微软雅黑";
+	cursor: pointer;
+}
+.top_btn:hover{
+	background-color: #cccccc;
+}
+/* 内联元素是不可以控制宽和高、margin等；并且在同一行显示，不换行。
+块级元素时可以控制宽和高、margin等，并且会换行。
+
+inline：使用此属性后，元素会被显示为内联元素，元素则不会换行。
+block：使用此属性后，元素会被现实为块级元素，元素会进行换行。
+inline-block：是使元素以块级元素的形式呈现在行内。意思就是说，让这个元素显示在同一行不换行，但是又可以控制高度和宽度，这相当于内敛元素的增强。 */

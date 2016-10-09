@@ -1,0 +1,256 @@
+body {
+    /*font-family: 'Roboto', sans-serif;*/
+    line-height: 1.5;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Microsoft YaHei";
+}
+
+.text {
+    max-width: 90%;
+    margin-left: 5%;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    -webkit-text-shadow: 1px 1px 3px #000;
+    -moz-text-shadow: 1px 1px 3px #000;
+    -ms-text-shadow: 1px 1px 3px #000;
+    -o-text-shadow: 1px 1px 3px #000;
+    text-shadow: 1px 1px 3px #000;
+    position: absolute;
+    top: 50%;
+}
+
+.text h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.separator {
+    max-width: 960px;
+    padding: 50px;
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .text {
+        text-align: center;
+        color: #fff;
+        max-width: 50%;
+        margin-left: 25%;
+        -webkit-text-shadow: 1px 1px 3px #000;
+        -moz-text-shadow: 1px 1px 3px #000;
+        -ms-text-shadow: 1px 1px 3px #000;
+        -o-text-shadow: 1px 1px 3px #000;
+        text-shadow: 1px 1px 3px #000;
+    }
+    .text h2 {
+        font-size: 2.5em;
+    }
+    .text p {
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    .csstransforms .text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: auto;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+/*img {
+    display: block;
+    width: 100%;
+}
+*/
+
+#bg-1,
+#bg-2,
+#bg-3 {
+    background-size: cover;
+    background-position: 50%;
+    background-color: #999;
+}
+
+#bg-1 {
+    background-image: url("../images/life-1.jpg");
+}
+
+#bg-2 {
+    background-image: url("../images/life-2.jpg");
+}
+
+#bg-3 {
+    background-image: url("../images/life-3.jpg");
+}
+
+#bg-4 {
+    background-image: url("../images/life-4.jpg");
+}
+
+
+/* 导航条 */
+
+.nav-main {
+    background-color: #fff;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.nav-content {
+    margin-left: 150px;
+}
+
+.nav-content > ul > li {
+    margin: 0 1em;
+}
+
+.nav-content > ul > li:nth-child(3) {
+    background-color: #9fca41;
+}
+
+.nav-content > ul > li:nth-child(3) > a {
+    color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-main {
+        /*height: 60px;*/
+    }
+    .navbar-brand img {
+        /*height: 60px;*/
+    }
+    .nav-content > ul > li {
+        margin: 0 1em;
+        padding: 5px 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-content > ul > li {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-content > ul > li {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-content > ul > li {
+        width: 100px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-content > ul > li {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.nav-content > ul > li > a {
+    letter-spacing: 1px;
+    font-family: "Microsoft YaHei";
+    color: #000;
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-content > ul > li > a {
+        font-size: 20px;
+    }
+}
+
+.nav-content > ul >li:hover,
+.nav-content > ul >li:focus {
+    background-color: #9fca41;
+}
+
+.nav-content > ul >li > a:hover,
+.nav-content > ul >li > a:focus {
+    background-color: #9fca41;
+    color: #fff;
+}
+
+
+/* 导航条 end*/
+
+
+/* 导航条效果 */
+
+.nav-effect {
+    position: relative;
+}
+
+.nav-effect:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #85af6f;
+    transition: all .3s;
+}
+
+.nav-effect:hover:before {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+
+/* 二级菜单 end*/
+
+.navbar-toggle {
+    background-color: #9FCA41;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+
+/* 版权 */
+
+footer {
+    margin-top: -10px;
+    background-color: #3e3e3e;
+}
+
+footer p {
+    margin-top: 10px;
+    padding: 0;
+    color: #fff;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+}

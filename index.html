@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/normalreset.css">
+	<link rel="stylesheet" type="text/css" href="css/mian.css">
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".top_btn").hide();
+			$(window).scroll(function(){ 	 
+			var scroll=$(window).scrollTop();
+		    if(scroll>=800){
+			$(".top_btn").css("display","block");}
+			else{
+			$(".top_btn").css("display","none");}
+			});
+			$(".top_btn").click(function(){
+			if($("body").is(":animated"))return;
+			$("html,body").animate({scrollTop:0},400);
+		 	});
+		});
+</script>
+</head>
+<body>
+	<div class="mian-wrapper">
+		<div class="top_btn">
+			<div class="top">TOP</div>
+		</div>
+		<header>
+			<nav class="nav">
+				<div class="logo">
+					<a href="#"><img src="img/logo.jpg"></a>
+					<div class="name">zzzz1111`</div>
+				</div>
+				<ul>
+					<li><a href="https://github.com/zhengxiangling/front" target="_blank">my github</a></li>
+					<li><a href="">html</a></li>
+					<li><a href="">css</a></li>
+					<li><a href="">jQ</a></li>
+				</ul>
+			</nav>
+			<div id="banner">
+				<div class="inner">
+					<h1>fair enough的博客</h1>
+					<p class="sub-header">这里收集了我平时写的作业和平时写的练习。<br>
+					欢迎大家review。
+					</p>
+					<!-- <button>call me</button> -->
+					<div class="more">more</div>
+				</div>
+			</div>
+		</header>
+		<div class="content">
+			<section class="green-section">
+				<div class="wrapper">
+					<div>
+						<h2>一个标题</h2>
+						<div class="hr"></div>
+						<p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
+					</div>
+					<div class="icon-group">
+						<span class="icon">item1</span>
+						<span class="icon">item2</span>
+						<span class="icon">item3</span>
+					</div>
+				</div>
+			</section>
+			<section class="gray-section">
+				<div class="article-preview">
+					<div class="text-section">
+						<h2></h2>
+						<div class="sub-heading">大班作业</div>
+						<div><p><small>homework of big class</small></p></div>
+						<div class="homework-small-group">
+							<div class="homework-small">
+								<a href="http://zhengxiangling.github.io/front/honework/%E5%A4%A7%E7%8F%AD/1.%E5%85%A8%E5%B1%8F%E5%88%87%E6%8D%A2/%E5%85%A8%E5%B1%8F%E5%88%87%E6%8D%A2%EF%BC%88%E4%B8%8A%E4%B8%8B%EF%BC%89/index.html" target="_blank"><p>1.全屏切换_之上下</p></a>
+								<a href="http://zhengxiangling.github.io/front/honework/%E5%A4%A7%E7%8F%AD/1.%E5%85%A8%E5%B1%8F%E5%88%87%E6%8D%A2/%E5%85%A8%E5%B1%8F%E5%88%87%E6%8D%A2%EF%BC%88%E5%B7%A6%E5%8F%B3%EF%BC%89/index.html" target="_blank"><p>2.全屏切换_之左右</p></a>
+								<a href="http://zhengxiangling.github.io//front/honework/%E5%A4%A7%E7%8F%AD/2.%E4%BA%8C%E7%BA%A7%E8%8F%9C%E5%8D%95/2nd%20time/index.html" target="_blank"><p>3.二级菜单_效果2</p></a>
+							</div>
+							<div class="homework-small">
+								<a href="http://zhengxiangling.github.io/front/honework/%E5%A4%A7%E7%8F%AD/2.%E4%BA%8C%E7%BA%A7%E8%8F%9C%E5%8D%95/3rd%20time/index.html#" target="_blank"><p>4.二级菜单_效果3</p></a>
+							</div>
+							<div class="homework-small"><a href=""></a></div>
+							<div class="homework-small"><a href=""></a></div>
+							<div class="homework-small"><a href=""></a></div>
+						</div>
+					</div>
+					<div class="img-section">
+						<img src="img/pic01.jpg" alt="">
+					</div>
+				</div>
+				<div class="article-preview">
+					<div class="img-section">
+						<img src="img/pic02.jpg" alt="">
+					</div>
+					<div class="text-section">
+						<h2></h2>
+						<div class="sub-heading">小班作业</div>
+						<div><p><small>homework of small class</small></p></div>
+						<div class="homework-small-group">
+							<div class="homework-small">
+								<a href="http://zhengxiangling.github.io/front/honework/%E5%B0%8F%E7%8F%AD/1.%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8/%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8/index.html" target="_blank"><p>1.水平滚动</p></a>
+								<a href="http://zhengxiangling.github.io/case/css3-case/3.css3%E5%AF%BC%E8%88%AA%E6%95%88%E6%9E%9C/index.html" target="_blank"><p>2.CSS3-导航效果</p></a>
+							</div>
+							<div class="homework-small"><a href=""></a></div>
+							<div class="homework-small"><a href=""></a></div>
+							<div class="homework-small"><a href=""></a></div>
+							<div class="homework-small"><a href=""></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="article-preview">
+					<div class="text-section">
+						<h2></h2>
+						<div class="sub-heading">js及jQ的作业</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						</p>
+					</div>
+					<div class="img-section">
+						<img src="img/pic03.jpg" alt="">
+					</div>
+				</div>
+			</section>
+			<section class="purple-section">
+				<div class="heading-wrapper">
+					<h2>平时积累写的小练习</h2>
+					<div class="hr"></div>
+					<div class="sub-heading">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					</div>
+					<div class="card-group clearfix">
+						<div class="card">
+							<a href="" class="atexthover"><h3>百度前端学院-task</h3></a>
+							<p>包含三栏式布局，<br/>通过HTML及CSS模拟报纸排版，
+							<br/>响应式网格（栅格化）布局，<br/>Flexbox 布局练习
+							</p>
+						</div>
+						<div class="card">
+							<a href="" class="atexthover"><h3>about-HTML5</h3></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p>
+						</div>
+						<div class="card">
+							<a href="" class="atexthover"><h3>about-CSS3</h3></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p>
+						</div>
+						<div class="card">
+							<a href="" class="atexthover"><h3>标题三</h3></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p>
+						</div>
+						<div class="card">
+							<a href="" class="atexthover"><h3>标题三</h3></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p>
+						</div>
+						<div class="card">
+							<a href="" class="atexthover"><h3>标题三</h3></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<ul class="share-group">
+				<li>item1</li>
+				<li>item1</li>
+				<li>item1</li>
+				<li>item1</li>
+			</ul>
+			<div class="copy">
+				&copy 2xl-2016
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

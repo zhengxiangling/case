@@ -1,0 +1,36 @@
+.effect-1{
+	text-align: center;
+	background-color:  #0e83cd;
+}
+.nav-effect-1>a:before,
+.nav-effect-1>a:after {
+	display: inline-block;/* 应用此特性的元素呈现为内联对象，周围元素保持在同一行，但可以设置宽度和高度地块元素的属性 */
+	-webkit-transition: -webkit-transform 0.3s ease-in, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s ease-in, opacity 0.2s;
+	transition: transform 0.3s ease-in, opacity 0.2s;
+}
+
+.nav-effect-1>a:before {
+	content: '[';
+	opacity: 0;
+}
+
+.nav-effect-1>a:after {
+	content: ']';
+	opacity: 0;
+}
+
+.nav-effect-1>a:hover:before,
+.nav-effect-1>a:focus:before{
+	opacity: 1;
+	-webkit-transform: translateX(-10px);
+	-moz-transform: translateX(-10px);
+	transform: translateX(-10px);
+}
+.nav-effect-1>a:hover:after,
+.nav-effect-1>a:focus:after{
+	opacity: 1;
+	-webkit-transform: translateX(10px);
+	-moz-transform: translateX(10px);
+	transform: translateX(10px);
+}

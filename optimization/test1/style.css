@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 62.5%;
+    background: url(images/body-bg.png) repeat-x top #f5ecd4;
+    font-family: Helvetica, sans-serif;
+}
+
+a {
+    color: #540000;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.8em;
+}
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.8em;
+}
+h3 {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+    padding: 5px;
+}
+
+p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+    margin-bottom: 0.8em;
+}
+.clear{clear: both;}
+div#page-wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+ul#nav {
+    height: 236px;
+    background: url(images/header-bg.jpg) no-repeat;
+    list-style: none;
+    padding-left: 90px;
+}
+
+ul#nav li {
+    display: inline;
+    font-size: 1.3em;
+}
+
+ul#nav li a {
+    display: block;
+    text-align: center;
+    width: 113px;
+    margin-top: 168px;
+    float: left;
+    color: white;
+    font-weight: bold;
+}
+
+
+/*导航技巧
+可以先让li变为行内元素，然后让li下的a为块状元素后做浮动*/
+
+ul#nav li a:hover,
+ul#nav li a:active {
+    color: yellow;
+    text-decoration: none;
+}
+
+div#main-content .left-col {
+    width: 510px;
+    float: left;
+}
+
+div#main-content .right-col {
+    width: 260px;
+    float: right;
+}
+
+div#main-content .left-col .quick-jumps {
+    width: 200px;
+    float: left;
+    margin-right: 15px;
+    background: url(images/remote.jpg) bottom center no-repeat;
+    padding-bottom: 120px;
+}
+div#main-content .left-col .quick-jumps h3{
+	text-align: center;
+	font-style: italic;
+	background-color: #e9bc3d;
+}
+div#main-content .left-col > p{
+}
+div#main-content .left-col .quick-jumps p span {
+    color: #e9bc3d;
+}
+div#main-content .left-col .quick-jumps a{
+	color: black;
+}
+div#main-content .right-col{
+	border-top: 8px solid #540000;
+    padding-top: 15px;
+}
+div#footer {
+    background: #560000;
+    color: white;
+    padding: 10px 0 10px 0;
+    border-top: 2px solid red;
+    text-align: center;
+}
+div#footer p{
+	margin: 0;
+}

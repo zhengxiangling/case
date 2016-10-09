@@ -1,0 +1,64 @@
+body {
+    font-family: "Microsoft YaHei";
+}
+.section {
+    text-align: center;
+    color: #fff;
+}
+
+.section p img {
+    width: 33.3333%;
+    margin-bottom: 5%;
+}
+.section a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 60px;
+    border-radius: 50px;
+}
+
+.section a {
+    background-color: #9fca41;
+}
+
+@media (min-width: 768px) {
+    .section {
+        background-size: 100% 100%;
+    }
+}
+
+.section1 {
+    background-image: url(../images/meili.jpg);
+}
+
+.section2 {
+    background-image: url(../images/yaolan.jpg);
+}
+
+.section3 {
+    background-image: url(../images/xianzhuang.jpg);
+}
+
+.section4 {
+    background-image: url(../images/zhili.jpg);
+}
+
+.section a {
+    position: relative;
+    left: -120%;
+}
+
+.section1 a {
+    position: relative;
+    left: 0;
+}
+
+#fp-nav ul li a.active span {
+    background-color: #fff;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    border: 1px solid #fff;
+    width: 12px;
+    height: 12px;
+}

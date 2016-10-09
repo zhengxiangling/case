@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>美丽广西 绿水青山</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!--[if lt IE 9]>
+        <script src="js/respond.js"></script>
+        <script src="js/html5.js"></script>
+    <![endif]-->
+    <script>
+    $(function() {
+        $('#dowebok').fullpage({
+            anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['美丽广西', '生命摇篮', '环境现状', '治理攻略'],
+            showActiveTooltip: true,
+
+            //Scrolling
+            css3: true,
+            scrollingSpeed: 700,
+            fitToSection: true,
+            scrollBar: true,
+            easing: 'easeInOutCirc',
+            loopHorizontal: true,
+
+            //Design
+            resize: true,
+            afterLoad: function(anchorLink, index) {
+                if (index == 1) {
+                    $('.section1').find('a').delay(500).animate({
+                        left: '0'
+                    }, 1500, 'easeOutExpo');
+                }
+                if (index == 2) {
+                    $('.section2').find('a').delay(500).animate({
+                        left: '0'
+                    }, 1500, 'easeOutExpo');
+                }
+                if (index == 3) {
+                    $('.section3').find('a').delay(500).animate({
+                        left: '0'
+                    }, 1500, 'easeOutExpo');
+                }
+                if (index == 4) {
+                    $('.section4').find('a').delay(500).animate({
+                        left: '0'
+                    }, 1500, 'easeOutExpo');
+                }
+            },
+            onLeave: function(index, direction) {
+                if (index == '1') {
+                    $('.section1').find('a').delay(500).animate({
+                        left: '-120%'
+                    }, 1500, 'easeOutExpo');
+                }
+                if (index == '2') {
+                    $('.section2').find('a').delay(500).animate({
+                        left: '-120%'
+                    }, 1500, 'easeOutExpo');
+                }
+                if (index == '3') {
+                    $('.section3').find('a').delay(500).animate({
+                        left: '-120%'
+                    }, 1500, 'easeOutExpo');
+                }
+                if (index == '4') {
+                    $('.section4').find('a').delay(500).animate({
+                        left: '-120%'
+                    }, 1500, 'easeOutExpo');
+                }
+            }
+        });
+        $(window).resize(function() {
+            autoScrolling();
+        });
+
+        function autoScrolling() {
+            var $ww = $(window).width();
+            if ($ww < 1024) {
+                $.fn.fullpage.setAutoScrolling(false);
+            } else {
+                $.fn.fullpage.setAutoScrolling(true);
+            }
+        }
+        autoScrolling();
+    });
+    </script>
+</head>
+
+<body>
+    <div id="dowebok">
+        <div class="section section1">
+            <p><img src="images/meili-font.png"></p>
+            <a href="htmls/beautiful-gx.html">点击进入</a>
+        </div>
+        <div class="section section2">
+            <p><img src="images/yaolan-font.png"></p>
+            <a href="htmls/life-cradle.html">点击进入</a>
+        </div>
+        <div class="section section3">
+            <p><img src="images/xianzhuang-font.png"></p>
+            <a href="htmls/current-en.html">点击进入</a>
+        </div>
+        <div class="section section4">
+            <p><img src="images/zhili-font.png"></p>
+            <a href="htmls/strategy-ma.html">点击进入</a>
+        </div>
+    </div>
+</body>
+
+</html>

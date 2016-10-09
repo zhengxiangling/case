@@ -1,0 +1,72 @@
+.effect-2{
+	text-align: center;
+	background-color:  #3fa46a;
+	-webkit-perspective:1000;
+}
+.nav-effect-2 a {
+	display: inline-block;
+	text-decoration: none;
+	margin: 1em;
+	font-size: 20px;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	perspective: 1000px;
+	text-transform: capitalize;
+}
+
+.nav-effect-2 a span {
+	background: #3fd46c;
+	line-height: 3em;
+	padding: 0 1em;
+	display: inline-block;
+	position: relative;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform-origin: top;
+	-moz-transform-origin: top;
+	transform-origin:top;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.nav-effect-2 a span:before {
+	content: attr(data-hover);
+	top: 100%;
+	 left: 0; 
+	 position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);								
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	transition: background 0.3s;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+	-webkit-transform-origin:top;
+	-moz-transform-origin: top;
+	transform-origin: top;
+	background:  #3fd46c;
+/*data-  为自定义属性，如上 自定义 提示 data-hover ="内容",
+配合   before ，after 使用 content 的attr 调用 自定义提示，
+content: attr(data-hover);*/
+
+}
+/*:focus 选择器用于选取获得焦点的元素。
+提示：接收键盘事件或其他用户输入的元素都允许 :focus 选择器。
+:focus 相当于鼠标点击事件*/
+.nav-effect-2 a:hover span,
+.nav-effect-2 a:focus span {
+	-webkit-transform: rotateX(90deg) translateY(-22px);
+	-moz-transform: rotateX(90deg) translateY(-22px);
+	transform: rotateX(90deg) translateY(-22px);
+}
+
+.nav-effect-2 a:hover span::before,
+.nav-effect-2 a:focus span::before {
+	background: #3fc46d;	
+}

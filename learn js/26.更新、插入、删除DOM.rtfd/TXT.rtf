@@ -1,0 +1,524 @@
+{\rtf1\ansi\ansicpg936\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset134 PingFangSC-Regular;\f1\fnil\fcharset0 HelveticaNeue;\f2\fnil\fcharset0 Consolas;
+\f3\fmodern\fcharset0 Courier;\f4\fmodern\fcharset0 Courier-Oblique;\f5\fmodern\fcharset0 Courier-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red52\green52\blue52;\red83\green83\blue83;\red255\green255\blue255;
+\red210\green0\blue68;\red249\green249\blue249;\red52\green52\blue52;\red0\green0\blue109;\red14\green110\blue109;
+\red210\green0\blue53;\red135\green136\blue117;\red38\green38\blue38;\red17\green137\blue135;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl440\sa300\partightenfactor0
+
+\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
+\'b8\'fc\'d0\'c2
+\f1 DOM\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \outl0\strokewidth0 \strokec3 \'c4\'c3\'b5\'bd\'d2\'bb\'b8\'f6
+\f1 DOM
+\f0 \'bd\'da\'b5\'e3\'ba\'f3\'a3\'ac\'ce\'d2\'c3\'c7\'bf\'c9\'d2\'d4\'b6\'d4\'cb\'fc\'bd\'f8\'d0\'d0\'b8\'fc\'d0\'c2\'a1\'a3
+\f1 \
+
+\f0 \'bf\'c9\'d2\'d4\'d6\'b1\'bd\'d3\'d0\'de\'b8\'c4\'bd\'da\'b5\'e3\'b5\'c4\'ce\'c4\'b1\'be\'a3\'ac\'b7\'bd\'b7\'a8\'d3\'d0\'c1\'bd\'d6\'d6\'a3\'ba
+\f1 \
+
+\f0 \'d2\'bb\'d6\'d6\'ca\'c7\'d0\'de\'b8\'c4
+\f2\fs24 \cf5 \cb6 \strokec5 innerHTML
+\f0\fs28 \cf3 \cb4 \strokec3 \'ca\'f4\'d0\'d4\'a3\'ac\'d5\'e2\'b8\'f6\'b7\'bd\'ca\'bd\'b7\'c7\'b3\'a3\'c7\'bf\'b4\'f3\'a3\'ac\'b2\'bb\'b5\'ab\'bf\'c9\'d2\'d4\'d0\'de\'b8\'c4\'d2\'bb\'b8\'f6
+\f1 DOM
+\f0 \'bd\'da\'b5\'e3\'b5\'c4\'ce\'c4\'b1\'be\'c4\'da\'c8\'dd\'a3\'ac\'bb\'b9\'bf\'c9\'d2\'d4\'d6\'b1\'bd\'d3\'cd\'a8\'b9\'fd
+\f1 HTML
+\f0 \'c6\'ac\'b6\'ce\'d0\'de\'b8\'c4
+\f1 DOM
+\f0 \'bd\'da\'b5\'e3\'c4\'da\'b2\'bf\'b5\'c4\'d7\'d3\'ca\'f7\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs24 \cf7 \cb6 \strokec7 // 
+\f0 \'bb\'f1\'c8\'a1
+\f3 \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "p-id"\cf8 \strokec8 >\cf7 \strokec7 ...\cf8 \strokec8 </p>\cf7 \strokec7 \
+var p = document.getElementById('p-id');\
+// 
+\f0 \'c9\'e8\'d6\'c3\'ce\'c4\'b1\'be\'ce\'aa
+\f3 abc:\
+p.innerHTML = 'ABC'; // \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "p-id"\cf8 \strokec8 >\cf7 \strokec7 ABC\cf8 \strokec8 </p>\cf7 \strokec7 \
+// 
+\f0 \'c9\'e8\'d6\'c3
+\f3 HTML:\
+p.innerHTML = 'ABC \cf8 \strokec8 <span \cf9 \strokec9 style\cf8 \strokec8 =\cf10 \strokec10 "color:red"\cf8 \strokec8 >\cf7 \strokec7 RED\cf8 \strokec8 </span>\cf7 \strokec7  XYZ';\
+// \cf8 \strokec8 <p>\cf7 \strokec7 ...\cf8 \strokec8 </p>
+\f0 \cf7 \strokec7 \'b5\'c4\'c4\'da\'b2\'bf\'bd\'e1\'b9\'b9\'d2\'d1\'d0\'de\'b8\'c4
+\f3 \
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \strokec3 \'d3\'c3
+\f2\fs24 \cf5 \cb6 \strokec5 innerHTML
+\f0\fs28 \cf3 \cb4 \strokec3 \'ca\'b1\'d2\'aa\'d7\'a2\'d2\'e2\'a3\'ac\'ca\'c7\'b7\'f1\'d0\'e8\'d2\'aa\'d0\'b4\'c8\'eb
+\f1 HTML
+\f0 \'a1\'a3\'c8\'e7\'b9\'fb\'d0\'b4\'c8\'eb\'b5\'c4\'d7\'d6\'b7\'fb\'b4\'ae\'ca\'c7\'cd\'a8\'b9\'fd\'cd\'f8\'c2\'e7\'c4\'c3\'b5\'bd\'c1\'cb\'a3\'ac\'d2\'aa\'d7\'a2\'d2\'e2\'b6\'d4\'d7\'d6\'b7\'fb\'b1\'e0\'c2\'eb\'c0\'b4\'b1\'dc\'c3\'e2
+\f1 XSS
+\f0 \'b9\'a5\'bb\'f7\'a1\'a3
+\f1 \
+
+\f0 \'b5\'da\'b6\'fe\'d6\'d6\'ca\'c7\'d0\'de\'b8\'c4
+\f2\fs24 \cf5 \cb6 \strokec5 innerText
+\f0\fs28 \cf3 \cb4 \strokec3 \'bb\'f2
+\f2\fs24 \cf5 \cb6 \strokec5 textContent
+\f0\fs28 \cf3 \cb4 \strokec3 \'ca\'f4\'d0\'d4\'a3\'ac\'d5\'e2\'d1\'f9\'bf\'c9\'d2\'d4\'d7\'d4\'b6\'af\'b6\'d4\'d7\'d6\'b7\'fb\'b4\'ae\'bd\'f8\'d0\'d0
+\f1 HTML
+\f0 \'b1\'e0\'c2\'eb\'a3\'ac\'b1\'a3\'d6\'a4\'ce\'de\'b7\'a8\'c9\'e8\'d6\'c3\'c8\'ce\'ba\'ce
+\f1 HTML
+\f0 \'b1\'ea\'c7\'a9\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs24 \cf7 \cb6 \strokec7 // 
+\f0 \'bb\'f1\'c8\'a1
+\f3 \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "p-id"\cf8 \strokec8 >\cf7 \strokec7 ...\cf8 \strokec8 </p>\cf7 \strokec7 \
+var p = document.getElementById('p-id');\
+// 
+\f0 \'c9\'e8\'d6\'c3\'ce\'c4\'b1\'be
+\f3 :\
+p.innerText = '\cf8 \strokec8 <script>\cf7 \strokec7 alert(\cf10 \strokec10 "Hi"\cf7 \strokec7 )\cf8 \strokec8 </script>\cf7 \strokec7 ';\
+// HTML
+\f0 \'b1\'bb\'d7\'d4\'b6\'af\'b1\'e0\'c2\'eb\'a3\'ac\'ce\'de\'b7\'a8\'c9\'e8\'d6\'c3\'d2\'bb\'b8\'f6
+\f3 \cf8 \strokec8 <script>
+\f0 \cf7 \strokec7 \'bd\'da\'b5\'e3
+\f3 :\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f4\i \cf11 \strokec11 // <p id="p-id">&lt;script&gt;alert("Hi")&lt;/script&gt;</p>
+\f3\i0 \cf7 \strokec7 \
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \strokec3 \'c1\'bd\'d5\'df\'b5\'c4\'c7\'f8\'b1\'f0\'d4\'da\'d3\'da\'b6\'c1\'c8\'a1\'ca\'f4\'d0\'d4\'ca\'b1\'a3\'ac
+\f2\fs24 \cf5 \cb6 \strokec5 innerText
+\f0\fs28 \cf3 \cb4 \strokec3 \'b2\'bb\'b7\'b5\'bb\'d8\'d2\'fe\'b2\'d8\'d4\'aa\'cb\'d8\'b5\'c4\'ce\'c4\'b1\'be\'a3\'ac\'b6\'f8
+\f2\fs24 \cf5 \cb6 \strokec5 textContent
+\f0\fs28 \cf3 \cb4 \strokec3 \'b7\'b5\'bb\'d8\'cb\'f9\'d3\'d0\'ce\'c4\'b1\'be\'a1\'a3\'c1\'ed\'cd\'e2\'d7\'a2\'d2\'e2
+\f1 IE<9
+\f0 \'b2\'bb\'d6\'a7\'b3\'d6
+\f2\fs24 \cf5 \cb6 \strokec5 textContent
+\f0\fs28 \cf3 \cb4 \strokec3 \'a1\'a3
+\f1 \
+
+\f0 \'d0\'de\'b8\'c4
+\f1 CSS
+\f0 \'d2\'b2\'ca\'c7\'be\'ad\'b3\'a3\'d0\'e8\'d2\'aa\'b5\'c4\'b2\'d9\'d7\'f7\'a1\'a3
+\f1 DOM
+\f0 \'bd\'da\'b5\'e3\'b5\'c4
+\f2\fs24 \cf5 \cb6 \strokec5 style
+\f0\fs28 \cf3 \cb4 \strokec3 \'ca\'f4\'d0\'d4\'b6\'d4\'d3\'a6\'cb\'f9\'d3\'d0\'b5\'c4
+\f1 CSS
+\f0 \'a3\'ac\'bf\'c9\'d2\'d4\'d6\'b1\'bd\'d3\'bb\'f1\'c8\'a1\'bb\'f2\'c9\'e8\'d6\'c3\'a1\'a3\'d2\'f2\'ce\'aa
+\f1 CSS
+\f0 \'d4\'ca\'d0\'ed
+\f2\fs24 \cf5 \cb6 \strokec5 font-size
+\f0\fs28 \cf3 \cb4 \strokec3 \'d5\'e2\'d1\'f9\'b5\'c4\'c3\'fb\'b3\'c6\'a3\'ac\'b5\'ab\'cb\'fc\'b2\'a2\'b7\'c7
+\f1 JavaScript
+\f0 \'d3\'d0\'d0\'a7\'b5\'c4\'ca\'f4\'d0\'d4\'c3\'fb\'a3\'ac\'cb\'f9\'d2\'d4\'d0\'e8\'d2\'aa\'d4\'da
+\f1 JavaScript
+\f0 \'d6\'d0\'b8\'c4\'d0\'b4\'ce\'aa\'cd\'d5\'b7\'e5\'ca\'bd\'c3\'fc\'c3\'fb
+\f2\fs24 \cf5 \cb6 \strokec5 fontSize
+\f0\fs28 \cf3 \cb4 \strokec3 \'a3\'ba
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs24 \cf7 \cb6 \strokec7 // 
+\f0 \'bb\'f1\'c8\'a1
+\f3 \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "p-id"\cf8 \strokec8 >\cf7 \strokec7 ...\cf8 \strokec8 </p>\cf7 \strokec7 \
+var p = document.getElementById('p-id');\
+// 
+\f0 \'c9\'e8\'d6\'c3
+\f3 CSS:\
+p.style.color = '#ff0000';\
+p.style.fontSize = '20px';\
+p.style.paddingTop = '2em';\
+\pard\pardeftab720\sl440\sa300\partightenfactor0
+
+\f0\fs32 \cf7 \cb4 \'b2\'e5\'c8\'eb
+\f1 DOM\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \strokec3 \'b5\'b1\'ce\'d2\'c3\'c7\'bb\'f1\'b5\'c3\'c1\'cb\'c4\'b3\'b8\'f6
+\f1 DOM
+\f0 \'bd\'da\'b5\'e3\'a3\'ac\'cf\'eb\'d4\'da\'d5\'e2\'b8\'f6
+\f1 DOM
+\f0 \'bd\'da\'b5\'e3\'c4\'da\'b2\'e5\'c8\'eb\'d0\'c2\'b5\'c4
+\f1 DOM
+\f0 \'a3\'ac\'d3\'a6\'b8\'c3\'c8\'e7\'ba\'ce\'d7\'f6\'a3\'bf
+\f1 \
+
+\f0 \'c8\'e7\'b9\'fb\'d5\'e2\'b8\'f6
+\f1 DOM
+\f0 \'bd\'da\'b5\'e3\'ca\'c7\'bf\'d5\'b5\'c4\'a3\'ac\'c0\'fd\'c8\'e7\'a3\'ac
+\f2\fs24 \cf5 \cb6 \strokec5 <div></div>
+\f0\fs28 \cf3 \cb4 \strokec3 \'a3\'ac\'c4\'c7\'c3\'b4\'a3\'ac\'d6\'b1\'bd\'d3\'ca\'b9\'d3\'c3
+\f2\fs24 \cf5 \cb6 \strokec5 innerHTML = '<span>child</span>'
+\f0\fs28 \cf3 \cb4 \strokec3 \'be\'cd\'bf\'c9\'d2\'d4\'d0\'de\'b8\'c4
+\f1 DOM
+\f0 \'bd\'da\'b5\'e3\'b5\'c4\'c4\'da\'c8\'dd\'a3\'ac\'cf\'e0\'b5\'b1\'d3\'da
+\f1 \'93
+\f0 \'b2\'e5\'c8\'eb
+\f1 \'94
+\f0 \'c1\'cb\'d0\'c2\'b5\'c4
+\f1 DOM
+\f0 \'bd\'da\'b5\'e3\'a1\'a3
+\f1 \
+
+\f0 \'c8\'e7\'b9\'fb\'d5\'e2\'b8\'f6
+\f1 DOM
+\f0 \'bd\'da\'b5\'e3\'b2\'bb\'ca\'c7\'bf\'d5\'b5\'c4\'a3\'ac\'c4\'c7\'be\'cd\'b2\'bb\'c4\'dc\'d5\'e2\'c3\'b4\'d7\'f6\'a3\'ac\'d2\'f2\'ce\'aa
+\f2\fs24 \cf5 \cb6 \strokec5 innerHTML
+\f0\fs28 \cf3 \cb4 \strokec3 \'bb\'e1\'d6\'b1\'bd\'d3\'cc\'e6\'bb\'bb\'b5\'f4\'d4\'ad\'c0\'b4\'b5\'c4\'cb\'f9\'d3\'d0\'d7\'d3\'bd\'da\'b5\'e3\'a1\'a3
+\f1 \
+
+\f0 \'d3\'d0\'c1\'bd\'b8\'f6\'b0\'ec\'b7\'a8\'bf\'c9\'d2\'d4\'b2\'e5\'c8\'eb\'d0\'c2\'b5\'c4\'bd\'da\'b5\'e3\'a1\'a3\'d2\'bb\'b8\'f6\'ca\'c7\'ca\'b9\'d3\'c3
+\f2\fs24 \cf5 \cb6 \strokec5 appendChild
+\f0\fs28 \cf3 \cb4 \strokec3 \'a3\'ac\'b0\'d1\'d2\'bb\'b8\'f6\'d7\'d3\'bd\'da\'b5\'e3\'cc\'ed\'bc\'d3\'b5\'bd\'b8\'b8\'bd\'da\'b5\'e3\'b5\'c4\'d7\'ee\'ba\'f3\'d2\'bb\'b8\'f6\'d7\'d3\'bd\'da\'b5\'e3\'a1\'a3\'c0\'fd\'c8\'e7\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f4\i\fs24 \cf11 \cb6 \strokec11 <!-- HTML
+\f0\i0 \'bd\'e1\'b9\'b9
+\f4\i  -->
+\f3\i0 \cf7 \strokec7 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "js"\cf8 \strokec8 >\cf7 \strokec7 JavaScript\cf8 \strokec8 </p>\cf7 \strokec7 \
+\cf8 \strokec8 <div \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "list"\cf8 \strokec8 >\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "java"\cf8 \strokec8 >\cf7 \strokec7 Java\cf8 \strokec8 </p>\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "python"\cf8 \strokec8 >\cf7 \strokec7 Python\cf8 \strokec8 </p>\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "scheme"\cf8 \strokec8 >\cf7 \strokec7 Scheme\cf8 \strokec8 </p>\cf7 \strokec7 \
+\cf8 \strokec8 </div>\cf7 \strokec7 \
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \strokec3 \'b0\'d1
+\f2\fs24 \cf5 \cb6 \strokec5 <p id="js">JavaScript</p>
+\f0\fs28 \cf3 \cb4 \strokec3 \'cc\'ed\'bc\'d3\'b5\'bd
+\f2\fs24 \cf5 \cb6 \strokec5 <div id="list">
+\f0\fs28 \cf3 \cb4 \strokec3 \'b5\'c4\'d7\'ee\'ba\'f3\'d2\'bb\'cf\'ee\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f5\b\fs24 \cf12 \cb6 \strokec12 var
+\f3\b0 \cf7 \strokec7 \
+    js = document.getElementById(\cf10 \strokec10 'js'\cf7 \strokec7 ),\
+    
+\f5\b \cf12 \strokec12 list
+\f3\b0 \cf7 \strokec7  = document.getElementById(\cf10 \strokec10 'list'\cf7 \strokec7 );\
+
+\f5\b \cf12 \strokec12 list
+\f3\b0 \cf7 \strokec7 .appendChild(js);\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \strokec3 \'cf\'d6\'d4\'da\'a3\'ac
+\f1 HTML
+\f0 \'bd\'e1\'b9\'b9\'b1\'e4\'b3\'c9\'c1\'cb\'d5\'e2\'d1\'f9\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f4\i\fs24 \cf11 \cb6 \strokec11 <!-- HTML
+\f0\i0 \'bd\'e1\'b9\'b9
+\f4\i  -->
+\f3\i0 \cf7 \strokec7 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf8 \strokec8 <div \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "list"\cf8 \strokec8 >\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "java"\cf8 \strokec8 >\cf7 \strokec7 Java\cf8 \strokec8 </p>\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "python"\cf8 \strokec8 >\cf7 \strokec7 Python\cf8 \strokec8 </p>\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "scheme"\cf8 \strokec8 >\cf7 \strokec7 Scheme\cf8 \strokec8 </p>\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "js"\cf8 \strokec8 >\cf7 \strokec7 JavaScript\cf8 \strokec8 </p>\cf7 \strokec7 \
+\cf8 \strokec8 </div>\cf7 \strokec7 \
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \strokec3 \'d2\'f2\'ce\'aa\'ce\'d2\'c3\'c7\'b2\'e5\'c8\'eb\'b5\'c4
+\f2\fs24 \cf5 \cb6 \strokec5 js
+\f0\fs28 \cf3 \cb4 \strokec3 \'bd\'da\'b5\'e3\'d2\'d1\'be\'ad\'b4\'e6\'d4\'da\'d3\'da\'b5\'b1\'c7\'b0\'b5\'c4\'ce\'c4\'b5\'b5\'ca\'f7\'a3\'ac\'d2\'f2\'b4\'cb\'d5\'e2\'b8\'f6\'bd\'da\'b5\'e3\'ca\'d7\'cf\'c8\'bb\'e1\'b4\'d3\'d4\'ad\'cf\'c8\'b5\'c4\'ce\'bb\'d6\'c3\'c9\'be\'b3\'fd\'a3\'ac\'d4\'d9\'b2\'e5\'c8\'eb\'b5\'bd\'d0\'c2\'b5\'c4\'ce\'bb\'d6\'c3\'a1\'a3
+\f1 \
+
+\f0 \'b8\'fc\'b6\'e0\'b5\'c4\'ca\'b1\'ba\'f2\'ce\'d2\'c3\'c7\'bb\'e1\'b4\'d3\'c1\'e3\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6\'d0\'c2\'b5\'c4\'bd\'da\'b5\'e3\'a3\'ac\'c8\'bb\'ba\'f3\'b2\'e5\'c8\'eb\'b5\'bd\'d6\'b8\'b6\'a8\'ce\'bb\'d6\'c3\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f5\b\fs24 \cf12 \cb6 \strokec12 var
+\f3\b0 \cf7 \strokec7 \
+    
+\f5\b \cf12 \strokec12 list
+\f3\b0 \cf7 \strokec7  = document.getElementById(\cf10 \strokec10 'list'\cf7 \strokec7 ),\
+    haskell = document.createElement(\cf10 \strokec10 'p'\cf7 \strokec7 );\
+haskell.id = \cf10 \strokec10 'haskell'\cf7 \strokec7 ;\
+haskell.innerText = \cf10 \strokec10 'Haskell'\cf7 \strokec7 ;\
+
+\f5\b \cf12 \strokec12 list
+\f3\b0 \cf7 \strokec7 .appendChild(haskell);\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \strokec3 \'d5\'e2\'d1\'f9\'ce\'d2\'c3\'c7\'be\'cd\'b6\'af\'cc\'ac\'cc\'ed\'bc\'d3\'c1\'cb\'d2\'bb\'b8\'f6\'d0\'c2\'b5\'c4\'bd\'da\'b5\'e3\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f4\i\fs24 \cf11 \cb6 \strokec11 <!-- HTML
+\f0\i0 \'bd\'e1\'b9\'b9
+\f4\i  -->
+\f3\i0 \cf7 \strokec7 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf8 \strokec8 <div \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "list"\cf8 \strokec8 >\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "java"\cf8 \strokec8 >\cf7 \strokec7 Java\cf8 \strokec8 </p>\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "python"\cf8 \strokec8 >\cf7 \strokec7 Python\cf8 \strokec8 </p>\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "scheme"\cf8 \strokec8 >\cf7 \strokec7 Scheme\cf8 \strokec8 </p>\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "haskell"\cf8 \strokec8 >\cf7 \strokec7 Haskell\cf8 \strokec8 </p>\cf7 \strokec7 \
+\cf8 \strokec8 </div>
+\f2 \cf7 \strokec7 \
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \strokec3 \'b6\'af\'cc\'ac\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6\'bd\'da\'b5\'e3\'c8\'bb\'ba\'f3\'cc\'ed\'bc\'d3\'b5\'bd
+\f1 DOM
+\f0 \'ca\'f7\'d6\'d0\'a3\'ac\'bf\'c9\'d2\'d4\'ca\'b5\'cf\'d6\'ba\'dc\'b6\'e0\'b9\'a6\'c4\'dc\'a1\'a3\'be\'d9\'b8\'f6\'c0\'fd\'d7\'d3\'a3\'ac\'cf\'c2\'c3\'e6\'b5\'c4\'b4\'fa\'c2\'eb\'b6\'af\'cc\'ac\'b4\'b4\'bd\'a8\'c1\'cb\'d2\'bb\'b8\'f6
+\f2\fs24 \cf5 \cb6 \strokec5 <style>
+\f0\fs28 \cf3 \cb4 \strokec3 \'bd\'da\'b5\'e3\'a3\'ac\'c8\'bb\'ba\'f3\'b0\'d1\'cb\'fc\'cc\'ed\'bc\'d3\'b5\'bd
+\f2\fs24 \cf5 \cb6 \strokec5 <head>
+\f0\fs28 \cf3 \cb4 \strokec3 \'bd\'da\'b5\'e3\'b5\'c4\'c4\'a9\'ce\'b2\'a3\'ac\'d5\'e2\'d1\'f9\'be\'cd\'b6\'af\'cc\'ac\'b5\'d8\'b8\'f8\'ce\'c4\'b5\'b5\'cc\'ed\'bc\'d3\'c1\'cb\'d0\'c2\'b5\'c4
+\f1 CSS
+\f0 \'b6\'a8\'d2\'e5\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f5\b\fs24 \cf12 \cb6 \strokec12 var
+\f3\b0 \cf7 \strokec7  d = document.createElement(\cf10 \strokec10 'style'\cf7 \strokec7 );\
+d.setAttribute(\cf10 \strokec10 'type'\cf7 \strokec7 , \cf10 \strokec10 'text/css'\cf7 \strokec7 );\
+d.innerHTML = \cf10 \strokec10 'p \{ color: red \}'\cf7 \strokec7 ;\
+document.getElementsByTagName(\cf10 \strokec10 'head'\cf7 \strokec7 )[\cf13 \strokec13 0\cf7 \strokec7 ].appendChild(d);\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \strokec3 \'bf\'c9\'d2\'d4\'d4\'da
+\f1 Chrome
+\f0 \'b5\'c4\'bf\'d8\'d6\'c6\'cc\'a8\'d6\'b4\'d0\'d0\'c9\'cf\'ca\'f6\'b4\'fa\'c2\'eb\'a3\'ac\'b9\'db\'b2\'ec\'d2\'b3\'c3\'e6\'d1\'f9\'ca\'bd\'b5\'c4\'b1\'e4\'bb\'af\'a1\'a3
+\f1 \
+\pard\pardeftab720\sl480\sa300\partightenfactor0
+
+\fs36 \cf7 \strokec7 insertBefore\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \strokec3 \'c8\'e7\'b9\'fb\'ce\'d2\'c3\'c7\'d2\'aa\'b0\'d1\'d7\'d3\'bd\'da\'b5\'e3\'b2\'e5\'c8\'eb\'b5\'bd\'d6\'b8\'b6\'a8\'b5\'c4\'ce\'bb\'d6\'c3\'d4\'f5\'c3\'b4\'b0\'ec\'a3\'bf\'bf\'c9\'d2\'d4\'ca\'b9\'d3\'c3
+\f2\fs24 \cf5 \cb6 \strokec5 parentElement.insertBefore(newElement, referenceElement);
+\f0\fs28 \cf3 \cb4 \strokec3 \'a3\'ac\'d7\'d3\'bd\'da\'b5\'e3\'bb\'e1\'b2\'e5\'c8\'eb\'b5\'bd
+\f2\fs24 \cf5 \cb6 \strokec5 referenceElement
+\f0\fs28 \cf3 \cb4 \strokec3 \'d6\'ae\'c7\'b0\'a1\'a3
+\f1 \
+
+\f0 \'bb\'b9\'ca\'c7\'d2\'d4\'c9\'cf\'c3\'e6\'b5\'c4
+\f1 HTML
+\f0 \'ce\'aa\'c0\'fd\'a3\'ac\'bc\'d9\'b6\'a8\'ce\'d2\'c3\'c7\'d2\'aa\'b0\'d1
+\f2\fs24 \cf5 \cb6 \strokec5 Haskell
+\f0\fs28 \cf3 \cb4 \strokec3 \'b2\'e5\'c8\'eb\'b5\'bd
+\f2\fs24 \cf5 \cb6 \strokec5 Python
+\f0\fs28 \cf3 \cb4 \strokec3 \'d6\'ae\'c7\'b0\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f4\i\fs24 \cf11 \cb6 \strokec11 <!-- HTML
+\f0\i0 \'bd\'e1\'b9\'b9
+\f4\i  -->
+\f3\i0 \cf7 \strokec7 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf8 \strokec8 <div \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "list"\cf8 \strokec8 >\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "java"\cf8 \strokec8 >\cf7 \strokec7 Java\cf8 \strokec8 </p>\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "python"\cf8 \strokec8 >\cf7 \strokec7 Python\cf8 \strokec8 </p>\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "scheme"\cf8 \strokec8 >\cf7 \strokec7 Scheme\cf8 \strokec8 </p>\cf7 \strokec7 \
+\cf8 \strokec8 </div>\cf7 \strokec7 \
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \strokec3 \'bf\'c9\'d2\'d4\'d5\'e2\'c3\'b4\'d0\'b4\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f5\b\fs24 \cf12 \cb6 \strokec12 var
+\f3\b0 \cf7 \strokec7 \
+    
+\f5\b \cf12 \strokec12 list
+\f3\b0 \cf7 \strokec7  = document.getElementById(\cf10 \strokec10 'list'\cf7 \strokec7 ),\
+    ref = document.getElementById(\cf10 \strokec10 'python'\cf7 \strokec7 ),\
+    haskell = document.createElement(\cf10 \strokec10 'p'\cf7 \strokec7 );\
+haskell.id = \cf10 \strokec10 'haskell'\cf7 \strokec7 ;\
+haskell.innerText = \cf10 \strokec10 'Haskell'\cf7 \strokec7 ;\
+
+\f5\b \cf12 \strokec12 list
+\f3\b0 \cf7 \strokec7 .insertBefore(haskell, ref);\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \strokec3 \'d0\'c2\'b5\'c4
+\f1 HTML
+\f0 \'bd\'e1\'b9\'b9\'c8\'e7\'cf\'c2\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f4\i\fs24 \cf11 \cb6 \strokec11 <!-- HTML
+\f0\i0 \'bd\'e1\'b9\'b9
+\f4\i  -->
+\f3\i0 \cf7 \strokec7 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf8 \strokec8 <div \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "list"\cf8 \strokec8 >\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "java"\cf8 \strokec8 >\cf7 \strokec7 Java\cf8 \strokec8 </p>\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "haskell"\cf8 \strokec8 >\cf7 \strokec7 Haskell\cf8 \strokec8 </p>\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "python"\cf8 \strokec8 >\cf7 \strokec7 Python\cf8 \strokec8 </p>\cf7 \strokec7 \
+    \cf8 \strokec8 <p \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "scheme"\cf8 \strokec8 >\cf7 \strokec7 Scheme\cf8 \strokec8 </p>\cf7 \strokec7 \
+\cf8 \strokec8 </div>\cf7 \strokec7 \
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \strokec3 \'bf\'c9\'bc\'fb\'a3\'ac\'ca\'b9\'d3\'c3
+\f2\fs24 \cf5 \cb6 \strokec5 insertBefore
+\f0\fs28 \cf3 \cb4 \strokec3 \'d6\'d8\'b5\'e3\'ca\'c7\'d2\'aa\'c4\'c3\'b5\'bd\'d2\'bb\'b8\'f6
+\f1 \'93
+\f0 \'b2\'ce\'bf\'bc\'d7\'d3\'bd\'da\'b5\'e3
+\f1 \'94
+\f0 \'b5\'c4\'d2\'fd\'d3\'c3\'a1\'a3\'ba\'dc\'b6\'e0\'ca\'b1\'ba\'f2\'a3\'ac\'d0\'e8\'d2\'aa\'d1\'ad\'bb\'b7\'d2\'bb\'b8\'f6\'b8\'b8\'bd\'da\'b5\'e3\'b5\'c4\'cb\'f9\'d3\'d0\'d7\'d3\'bd\'da\'b5\'e3\'a3\'ac\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'b5\'fc\'b4\'fa
+\f2\fs24 \cf5 \cb6 \strokec5 children
+\f0\fs28 \cf3 \cb4 \strokec3 \'ca\'f4\'d0\'d4\'ca\'b5\'cf\'d6\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f5\b\fs24 \cf12 \cb6 \strokec12 var
+\f3\b0 \cf7 \strokec7 \
+    i, c,\
+    
+\f5\b \cf12 \strokec12 list
+\f3\b0 \cf7 \strokec7  = document.getElementById(\cf10 \strokec10 'list'\cf7 \strokec7 );\
+
+\f5\b \cf12 \strokec12 for
+\f3\b0 \cf7 \strokec7  (i = \cf13 \strokec13 0\cf7 \strokec7 ; i < 
+\f5\b \cf12 \strokec12 list
+\f3\b0 \cf7 \strokec7 .children.length; i++) \{\
+    c = 
+\f5\b \cf12 \strokec12 list
+\f3\b0 \cf7 \strokec7 .children[i]; 
+\f4\i \cf11 \strokec11 // 
+\f0\i0 \'c4\'c3\'b5\'bd\'b5\'da
+\f4\i i
+\f0\i0 \'b8\'f6\'d7\'d3\'bd\'da\'b5\'e3
+\f3 \cf7 \strokec7 \
+\}
+\f2 \
+\pard\pardeftab720\sl440\sa300\partightenfactor0
+
+\f0\fs32 \cf7 \cb4 \'c9\'be\'b3\'fd
+\f1 DOM\
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \strokec3 \'c9\'be\'b3\'fd\'d2\'bb\'b8\'f6
+\f1 DOM
+\f0 \'bd\'da\'b5\'e3\'be\'cd\'b1\'c8\'b2\'e5\'c8\'eb\'d2\'aa\'c8\'dd\'d2\'d7\'b5\'c3\'b6\'e0\'a1\'a3
+\f1 \
+
+\f0 \'d2\'aa\'c9\'be\'b3\'fd\'d2\'bb\'b8\'f6\'bd\'da\'b5\'e3\'a3\'ac\'ca\'d7\'cf\'c8\'d2\'aa\'bb\'f1\'b5\'c3\'b8\'c3\'bd\'da\'b5\'e3\'b1\'be\'c9\'ed\'d2\'d4\'bc\'b0\'cb\'fc\'b5\'c4\'b8\'b8\'bd\'da\'b5\'e3\'a3\'ac\'c8\'bb\'ba\'f3\'a3\'ac\'b5\'f7\'d3\'c3\'b8\'b8\'bd\'da\'b5\'e3\'b5\'c4
+\f2\fs24 \cf5 \cb6 \strokec5 removeChild
+\f0\fs28 \cf3 \cb4 \strokec3 \'b0\'d1\'d7\'d4\'bc\'ba\'c9\'be\'b5\'f4\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f4\i\fs24 \cf11 \cb6 \strokec11 // 
+\f0\i0 \'c4\'c3\'b5\'bd\'b4\'fd\'c9\'be\'b3\'fd\'bd\'da\'b5\'e3
+\f4\i :
+\f3\i0 \cf7 \strokec7 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f5\b \cf12 \strokec12 var
+\f3\b0 \cf7 \strokec7  
+\f5\b \cf12 \strokec12 self
+\f3\b0 \cf7 \strokec7  = document.getElementById(\cf10 \strokec10 'to-be-removed'\cf7 \strokec7 );\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f4\i \cf11 \strokec11 // 
+\f0\i0 \'c4\'c3\'b5\'bd\'b8\'b8\'bd\'da\'b5\'e3
+\f4\i :
+\f3\i0 \cf7 \strokec7 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f5\b \cf12 \strokec12 var
+\f3\b0 \cf7 \strokec7  
+\f5\b \cf12 \strokec12 parent
+\f3\b0 \cf7 \strokec7  = 
+\f5\b \cf12 \strokec12 self
+\f3\b0 \cf7 \strokec7 .parentElement;\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f4\i \cf11 \strokec11 // 
+\f0\i0 \'c9\'be\'b3\'fd
+\f4\i :
+\f3\i0 \cf7 \strokec7 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f5\b \cf12 \strokec12 var
+\f3\b0 \cf7 \strokec7  removed = 
+\f5\b \cf12 \strokec12 parent
+\f3\b0 \cf7 \strokec7 .removeChild(
+\f5\b \cf12 \strokec12 self
+\f3\b0 \cf7 \strokec7 );\
+removed === 
+\f5\b \cf12 \strokec12 self
+\f3\b0 \cf7 \strokec7 ; 
+\f4\i \cf11 \strokec11 // true
+\f3\i0 \cf7 \strokec7 \
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \strokec3 \'d7\'a2\'d2\'e2\'b5\'bd\'c9\'be\'b3\'fd\'ba\'f3\'b5\'c4\'bd\'da\'b5\'e3\'cb\'e4\'c8\'bb\'b2\'bb\'d4\'da\'ce\'c4\'b5\'b5\'ca\'f7\'d6\'d0\'c1\'cb\'a3\'ac\'b5\'ab\'c6\'e4\'ca\'b5\'cb\'fc\'bb\'b9\'d4\'da\'c4\'da\'b4\'e6\'d6\'d0\'a3\'ac\'bf\'c9\'d2\'d4\'cb\'e6\'ca\'b1\'d4\'d9\'b4\'ce\'b1\'bb\'cc\'ed\'bc\'d3\'b5\'bd\'b1\'f0\'b5\'c4\'ce\'bb\'d6\'c3\'a1\'a3
+\f1 \
+
+\f0 \'b5\'b1\'c4\'e3\'b1\'e9\'c0\'fa\'d2\'bb\'b8\'f6\'b8\'b8\'bd\'da\'b5\'e3\'b5\'c4\'d7\'d3\'bd\'da\'b5\'e3\'b2\'a2\'bd\'f8\'d0\'d0\'c9\'be\'b3\'fd\'b2\'d9\'d7\'f7\'ca\'b1\'a3\'ac\'d2\'aa\'d7\'a2\'d2\'e2\'a3\'ac
+\f2\fs24 \cf5 \cb6 \strokec5 children
+\f0\fs28 \cf3 \cb4 \strokec3 \'ca\'f4\'d0\'d4\'ca\'c7\'d2\'bb\'b8\'f6\'d6\'bb\'b6\'c1\'ca\'f4\'d0\'d4\'a3\'ac\'b2\'a2\'c7\'d2\'cb\'fc\'d4\'da\'d7\'d3\'bd\'da\'b5\'e3\'b1\'e4\'bb\'af\'ca\'b1\'bb\'e1\'ca\'b5\'ca\'b1\'b8\'fc\'d0\'c2\'a1\'a3
+\f1 \
+
+\f0 \'c0\'fd\'c8\'e7\'a3\'ac\'b6\'d4\'d3\'da\'c8\'e7\'cf\'c2
+\f1 HTML
+\f0 \'bd\'e1\'b9\'b9\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs24 \cf8 \cb6 \strokec8 <div \cf9 \strokec9 id\cf8 \strokec8 =\cf10 \strokec10 "parent"\cf8 \strokec8 >\cf7 \strokec7 \
+    \cf8 \strokec8 <p>\cf7 \strokec7 First\cf8 \strokec8 </p>\cf7 \strokec7 \
+    \cf8 \strokec8 <p>\cf7 \strokec7 Second\cf8 \strokec8 </p>\cf7 \strokec7 \
+\cf8 \strokec8 </div>\cf7 \strokec7 \
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \strokec3 \'b5\'b1\'ce\'d2\'c3\'c7\'d3\'c3\'c8\'e7\'cf\'c2\'b4\'fa\'c2\'eb\'c9\'be\'b3\'fd\'d7\'d3\'bd\'da\'b5\'e3\'ca\'b1\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f5\b\fs24 \cf12 \cb6 \strokec12 var
+\f3\b0 \cf7 \strokec7  
+\f5\b \cf12 \strokec12 parent
+\f3\b0 \cf7 \strokec7  = document.getElementById(\cf10 \strokec10 'parent'\cf7 \strokec7 );\
+
+\f5\b \cf12 \strokec12 parent
+\f3\b0 \cf7 \strokec7 .removeChild(
+\f5\b \cf12 \strokec12 parent
+\f3\b0 \cf7 \strokec7 .children[\cf13 \strokec13 0\cf7 \strokec7 ]);\
+
+\f5\b \cf12 \strokec12 parent
+\f3\b0 \cf7 \strokec7 .removeChild(
+\f5\b \cf12 \strokec12 parent
+\f3\b0 \cf7 \strokec7 .children[\cf13 \strokec13 1\cf7 \strokec7 ]); 
+\f4\i \cf11 \strokec11 // <-- 
+\f0\i0 \'e4\'af\'c0\'c0\'c6\'f7\'b1\'a8\'b4\'ed
+\f3 \cf7 \strokec7 \
+\pard\pardeftab720\sl400\sa300\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \strokec3 \'e4\'af\'c0\'c0\'c6\'f7\'b1\'a8\'b4\'ed\'a3\'ba
+\f2\fs24 \cf5 \cb6 \strokec5 parent.children[1]
+\f0\fs28 \cf3 \cb4 \strokec3 \'b2\'bb\'ca\'c7\'d2\'bb\'b8\'f6\'d3\'d0\'d0\'a7\'b5\'c4\'bd\'da\'b5\'e3\'a1\'a3\'d4\'ad\'d2\'f2\'be\'cd\'d4\'da\'d3\'da\'a3\'ac\'b5\'b1
+\f2\fs24 \cf5 \cb6 \strokec5 <p>First</p>
+\f0\fs28 \cf3 \cb4 \strokec3 \'bd\'da\'b5\'e3\'b1\'bb\'c9\'be\'b3\'fd\'ba\'f3\'a3\'ac
+\f2\fs24 \cf5 \cb6 \strokec5 parent.children
+\f0\fs28 \cf3 \cb4 \strokec3 \'b5\'c4\'bd\'da\'b5\'e3\'ca\'fd\'c1\'bf\'d2\'d1\'be\'ad\'b4\'d3
+\f1 2
+\f0 \'b1\'e4\'ce\'aa\'c1\'cb
+\f1 1
+\f0 \'a3\'ac\'cb\'f7\'d2\'fd
+\f2\fs24 \cf5 \cb6 \strokec5 [1]
+\f0\fs28 \cf3 \cb4 \strokec3 \'d2\'d1\'be\'ad\'b2\'bb\'b4\'e6\'d4\'da\'c1\'cb\'a1\'a3
+\f1 \
+
+\f0 \'d2\'f2\'b4\'cb\'a3\'ac\'c9\'be\'b3\'fd\'b6\'e0\'b8\'f6\'bd\'da\'b5\'e3\'ca\'b1\'a3\'ac\'d2\'aa\'d7\'a2\'d2\'e2
+\f2\fs24 \cf5 \cb6 \strokec5 children
+\f0\fs28 \cf3 \cb4 \strokec3 \'ca\'f4\'d0\'d4\'ca\'b1\'bf\'cc\'b6\'bc\'d4\'da\'b1\'e4\'bb\'af\'a1\'a3
+\f1 \
+}
